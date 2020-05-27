@@ -12,6 +12,7 @@
         "cartalyst/sentinel": "2.0.*",
         "cviebrock/eloquent-sluggable": "4.6",
         "fideloper/proxy": "^4.0",
+        "inertiajs/inertia-laravel": "^0.2.5",
         "laravel/framework": "5.7.*",
         "laravel/tinker": "^1.0",
         "maddhatter/laravel-fullcalendar": "^1.3",

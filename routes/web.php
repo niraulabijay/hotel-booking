@@ -11,9 +11,16 @@
 |
 */
 
+use Inertia\Inertia;
+
 Route::get('/create-super/{email}','authentication\RegistrationController@createAdmin');
 
-Route::get('/','front\FrontController@index')->name('index');
+//Route::get('/','front\FrontController@index')->name('index');
+Route::get('/',function (){
+    return Inertia::render('Home', [
+        'foo' => 'bar',
+    ]);
+});
 
 Route::group(['middleware' => 'visitor'], function () {
     Route::get('/register', 'authentication\RegistrationController@register')->name('register');
